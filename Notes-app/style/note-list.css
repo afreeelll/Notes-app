@@ -1,0 +1,23 @@
+.note-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.note-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .note-grid {
+        grid-template-columns: 1fr;
+    }
+}

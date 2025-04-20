@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <app-header></app-header>
+     
+    <main>
+        <div class="container">
+
+            <!-- Form tambah catatan-->
+            <note-form></note-form>
+
+            <note-list></note-list>
+            <!-- Catatan dimuat di sini-->
+        </div>
+    </main>
+
+    <floating-button></floating-button>
+
+    <app-footer></app-footer>
+
+    <!-- Modul JS-->
+     <script type="module" src="component/app-header.js"></script>
+     <script type="module" src="component/note-form.js"></script>
+     <script type="module" src="component/floating-button.js"></script>
+     <script type="module" src="component/note-list.js"></script>
+     <script type="module" src="component/app-footer.js"></script>
+     <script type="module" src="data/script.js"></script>
+
+</body>
+</html>
